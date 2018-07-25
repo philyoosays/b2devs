@@ -1,19 +1,33 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
+
+import NavBar from './NavBar';
+import Landing from './Landing';
+
 import './App.css';
 
-class App extends Component {
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      screen: 'landing'
+    }
+  }
   render() {
+    // let mainStyle = {
+    //   justifyContent: 'center'
+    // }
+
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <main style={{ display: 'flex' }}>
+        <aside className="asidecontainer">
+          <NavBar />
+          <div className="navspacer" />
+        </aside>
+        <Switch>
+          <Route exact path="/" component={Landing} />
+        </Switch>
+      </main>
     );
   }
 }

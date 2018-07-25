@@ -1,0 +1,14 @@
+.navcontainer {
+  width: 150px;
+  height: 100vh;
+  background: steelblue;
+  position: fixed;
+  left: 0;
+  box-shadow: 5px 10px 5px #888888;
+}
+
+.navcontainer > img {
+  width: 130px;
+  height: auto;
+  margin: 10px;
+}

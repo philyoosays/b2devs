@@ -1,0 +1,90 @@
+.landingcontainer {
+  /*border: 2px solid red;*/
+  flex: 1;
+  margin: auto;
+}
+
+.landingblurb {
+  border: 1px solid darkorange;
+  width: 80%;
+  height: 300px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.landingblurb > * {
+  flex: 1;
+  padding: 10px;
+  color: white;
+}
+
+.landingdevside {
+  border-right: 1px solid darkorange;
+  text-align: center;
+}
+
+.landingdevside > h1, .landingbizside > h1 {
+  font-size: 40px;
+  margin: 0;
+  color: black;
+  cursor: default;
+  margin-bottom: 0;
+}
+
+.landingdevside > h2 {
+  margin-bottom: 10px;
+}
+
+.landingbizside > h2 {
+  margin-bottom: 0px;
+}
+
+.landingbizside {
+  text-align: center;
+}
+
+.landingdevside > a > button {
+  position: relative;
+  top: 60px;
+}
+
+.landingbizside > a > button {
+  position: relative;
+  top: 22px;
+}
+
+.landingdevside > a > button, .landingbizside > a > button {
+  width: 150px;
+  height: 40px;
+  color: white;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  transition: all .7s ease-out;
+}
+
+.landingdevside:hover, .landingbizside:hover {
+  background: darkorange;
+  transition: all .7s ease-out;
+  border: 1px solid black;
+}
+
+.landingdevside:hover > h1, .landingbizside:hover > h1 {
+  color: darkorange;
+}
+
+.landingdevside:hover > a > button, .landingbizside:hover > a > button {
+  background: white;
+  border: 1px solid black;
+  color: steelblue;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+
+
+
+
+
+
+

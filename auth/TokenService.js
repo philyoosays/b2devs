@@ -9,7 +9,7 @@ module.exports = {
         process.env.SERVER_SECRET,
         {
           expiresIn: '7d',
-          issuer:    'ERIviaYoo',
+          issuer:    'b2DEVs',
         },
         (err, data) => err ? reject(err) : resolve(data),
       ),

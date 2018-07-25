@@ -12,7 +12,7 @@
     "react-install": "cd client && yarn install",
     "installer": "yarn install && npm run react-install",
     "heroku-postbuild": "cd client && yarn && yarn run build",
-    "prep": "mv client-package/TokenService.jsx client/TokenService.jsx && echo \"proxy\": \"http://localhost:3001\" >> client/package.json"
+    "prep": "mv client-package/TokenService.jsx client/TokenService.jsx"
   },
   "repository": {
     "type": "git",
