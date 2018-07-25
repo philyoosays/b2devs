@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 
 import NavBar from './NavBar';
 import Landing from './Landing';
+import RegisterDevs from './RegisterDevs';
 
 import './App.css';
 
@@ -14,9 +15,6 @@ class App extends React.Component {
     }
   }
   render() {
-    // let mainStyle = {
-    //   justifyContent: 'center'
-    // }
 
     return (
       <main style={{ display: 'flex' }}>
@@ -25,6 +23,8 @@ class App extends React.Component {
           <div className="navspacer" />
         </aside>
         <Switch>
+          <Route path="/register/business" component={Landing} />
+          <Route path="/register/devs" component={RegisterDevs} />
           <Route exact path="/" component={Landing} />
         </Switch>
       </main>

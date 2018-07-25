@@ -9,7 +9,7 @@ input:focus {
 .asidecontainer {
   display: inline-block;
   width: 170px;
-  height: 100vh;
+  height: 100%;
   margin: 0;
   background: silver;
   box-shadow: 5px 10px 10px #888888;

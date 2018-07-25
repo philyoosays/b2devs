@@ -1,0 +1,82 @@
+.regdevcontainer {
+  flex: 1;
+  margin: 0 auto;
+  /*border: 2px solid red;*/
+}
+
+.regdevinputs > div > span {
+  color: grey;
+  position: relative;
+  right: 77px;
+  top: 30px;
+/*  cursor: default;*/
+  /*border: 2px solid lime;
+  display: none;*/
+  z-index: 2;
+  transition: all .5s ease-out;
+}
+
+.regdevinputs > div > input {
+  position: relative;
+  left: 0px;
+  z-index: 1;
+}
+
+.regdevbox {
+  width: 60vw;
+  height: 800px;
+  border: 1px solid black;
+  margin: 50px auto;
+  background: steelblue;
+  color: white;
+  text-align: center;
+}
+
+.regdevbox > h1 {
+  font-size: 40px;
+}
+
+.regdevbox > h2 {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.regdevinputs {
+  display: flex;
+  /*flex: 1;*/
+}
+
+.regdevinputleft, .regdevinputright {
+  flex: 1;
+  border: 1px solid white;
+}
+
+.regdevinputfield {
+  border: none;
+  margin: 5px 0;
+  width: 250px;
+  height: 30px;
+  font-size: 20px;
+  /*border-left: 20px solid white;*/
+  padding-left: 10px;
+  border-left: 5px solid darkorange;
+  border-bottom: 5px solid darkorange;
+  z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
