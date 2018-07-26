@@ -7,7 +7,7 @@ const pgp = require('pg-promise')({
 const config = {
   host:     process.env.DB_HOST || 'localhost',
   port:     process.env.DB_PORT || 5432,
-  database: process.env.DB_NAME || '',
+  database: process.env.DB_NAME || 'b2devs',
 }
 
 const dbConfig = pgp(process.env.DATABASE_URL || config)
